@@ -34,8 +34,9 @@ export default function Hero() {
         <Stack spacing={2} useFlexGap sx={{ width: { xs: '100%', sm: '70%' } }}>
         <Typography
             component="h1"
-            variant="h2"
+            variant="h3"
             fontWeight={400}
+            color={'text.secondary'}
             sx={{
               display: 'flex',
               flexDirection: { xs: 'column', md: 'row' },
@@ -82,7 +83,7 @@ export default function Hero() {
             sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
           >
 
-            <Button variant="contained" color="primary">
+            <Button variant="outlined" color="primary">
               Get Started
             </Button>
           </Stack>

@@ -1,5 +1,5 @@
 import { alpha } from '@mui/material/styles';
-import { red, orange } from '@mui/material/colors';
+import { red, deepOrange, deepdeepOrange } from '@mui/material/colors';
 
 export const brand = {
   50: '#F0F7FF',
@@ -57,15 +57,15 @@ const getDesignTokens = (mode) => ({
   palette: {
     mode,
     primary: {
-      light: orange[200],
-      main: orange[500],
-      dark: orange[800],
-      contrastText: orange[50],
+      light: deepOrange[200],
+      main: deepOrange['A700'],
+      dark: deepOrange[800],
+      contrastText: deepOrange[50],
       ...(mode === 'dark' && {
-        contrastText: orange[100],
-        light: orange[300],
-        main: orange[400],
-        dark: orange[800],
+        contrastText: deepOrange[100],
+        light: deepOrange[300],
+        main: deepOrange[400],
+        dark: deepOrange[800],
       }),
     },
     secondary: {
@@ -123,9 +123,9 @@ const getDesignTokens = (mode) => ({
       ...(mode === 'dark' && { primary: '#fff', secondary: gray[400] }),
     },
     action: {
-      selected: `${alpha(orange[200], 0.2)}`,
+      selected: `${alpha(deepOrange[200], 0.2)}`,
       ...(mode === 'dark' && {
-        selected: alpha(orange[800], 0.2),
+        selected: alpha(deepOrange[800], 0.2),
       }),
     },
   },
@@ -236,13 +236,13 @@ export default function loadSLPTheme(mode) {
             borderRadius: '10px',
             boxShadow: `0 4px 16px ${alpha(gray[400], 0.2)}`,
             '& .Mui-selected': {
-              color: orange[500],
+              color: deepOrange[500],
             },
             ...(theme.palette.mode === 'dark' && {
               '& .Mui-selected': {
                 color: '#fff',
               },
-              boxShadow: `0 4px 16px ${alpha(orange[700], 0.5)}`,
+              boxShadow: `0 4px 16px ${alpha(deepOrange['A700'], 0.5)}`,
             }),
           }),
         },
@@ -255,9 +255,9 @@ export default function loadSLPTheme(mode) {
             borderRadius: '10px',
             fontWeight: 500,
             ...(theme.palette.mode === 'dark' && {
-              color: orange[400],
+              color: deepOrange['A700'],
               boxShadow: '0 4px 16px rgba(0, 0, 0, 0.5)',
-              '&.Mui-selected': { color: orange[300] },
+              '&.Mui-selected': { color: deepOrange['A700'] },
             }),
           }),
         },
@@ -272,7 +272,7 @@ export default function loadSLPTheme(mode) {
             boxSizing: 'border-box',
             transition: 'all 100ms ease-in',
             '&:focus-visible': {
-              outline: `3px solid ${alpha(orange[500], 0.5)}`,
+              outline: `3px solid ${alpha(deepOrange['A700'], 0.5)}`,
               outlineOffset: '2px',
             },
           },
@@ -296,48 +296,48 @@ export default function loadSLPTheme(mode) {
             }),
             ...(ownerState.variant === 'contained' &&
               ownerState.color === 'primary' && {
-                color: orange[50],
-                background: orange[500],
-                backgroundImage: `linear-gradient(to bottom, ${orange[400]}, ${orange[600]})`,
-                boxShadow: `inset 0 1px ${alpha(orange[300], 0.4)}`,
-                outline: `1px solid ${orange[700]}`,
+                color: deepOrange[50],
+                background: deepOrange[500],
+                backgroundImage: `linear-gradient(to bottom, ${deepOrange[700]}, ${deepOrange['A700']})`,
+                boxShadow: `inset 0 1px ${alpha(deepOrange['A700'], 0.4)}`,
+                outline: `1px solid ${deepOrange['A700']}`,
                 '&:hover': {
-                  background: orange[400],
+                  background: deepOrange[400],
                   backgroundImage: 'none',
-                  boxShadow: `0 0 0 1px  ${alpha(orange[300], 0.5)}`,
+                  boxShadow: `0 0 0 1px  ${alpha(deepOrange[700], 0.5)}`,
                 },
               }),
             ...(ownerState.variant === 'outlined' && {
-              backgroundColor: alpha(orange[300], 0.1),
-              borderColor: orange[300],
-              color: orange[500],
+              backgroundColor: alpha(deepOrange[500], 0.1),
+              borderColor: deepOrange[300],
+              color: deepOrange[500],
               '&:hover': {
-                backgroundColor: alpha(orange[300], 0.3),
-                borderColor: orange[200],
+                backgroundColor: alpha(deepOrange[400], 0.3),
+                borderColor: deepOrange[200],
               },
             }),
             ...(ownerState.variant === 'text' && {
-              color: orange[500],
+              color: deepOrange[500],
               '&:hover': {
-                backgroundColor: alpha(orange[300], 0.3),
-                borderColor: orange[200],
+                backgroundColor: alpha(deepOrange[300], 0.3),
+                borderColor: deepOrange[200],
               },
             }),
             ...(theme.palette.mode === 'dark' && {
               ...(ownerState.variant === 'outlined' && {
-                backgroundColor: alpha(orange[600], 0.1),
-                borderColor: orange[700],
-                color: orange[300],
+                backgroundColor: alpha(deepOrange[600], 0.1),
+                borderColor: deepOrange[700],
+                color: deepOrange[300],
                 '&:hover': {
-                  backgroundColor: alpha(orange[600], 0.3),
-                  borderColor: orange[700],
+                  backgroundColor: alpha(deepOrange[600], 0.3),
+                  borderColor: deepOrange[700],
                 },
               }),
               ...(ownerState.variant === 'text' && {
-                color: orange[300],
+                color: deepOrange[300],
                 '&:hover': {
-                  backgroundColor: alpha(orange[600], 0.3),
-                  borderColor: orange[700],
+                  backgroundColor: alpha(deepOrange[600], 0.3),
+                  borderColor: deepOrange[700],
                 },
               }),
             }),
@@ -355,8 +355,8 @@ export default function loadSLPTheme(mode) {
             ...(ownerState.variant === 'outlined' && {
               background: `linear-gradient(to bottom, #FFF, ${gray[50]})`,
               '&:hover': {
-                borderColor: orange[300],
-                boxShadow: `0 0 24px ${orange[100]}`,
+                borderColor: deepOrange[300],
+                boxShadow: `0 0 24px ${deepOrange[100]}`,
               },
             }),
             ...(theme.palette.mode === 'dark' && {
@@ -368,8 +368,8 @@ export default function loadSLPTheme(mode) {
                   0.5,
                 )})`,
                 '&:hover': {
-                  borderColor: orange[700],
-                  boxShadow: `0 0 24px ${orange[800]}`,
+                  borderColor: deepOrange[700],
+                  boxShadow: `0 0 24px ${deepOrange[800]}`,
                 },
               }),
             }),
@@ -382,38 +382,38 @@ export default function loadSLPTheme(mode) {
             alignSelf: 'center',
             py: 1.5,
             px: 0.5,
-            background: `linear-gradient(to bottom right, ${orange[50]}, ${orange[100]})`,
+            background: `linear-gradient(to bottom right, ${deepOrange[50]}, ${deepOrange[100]})`,
             border: '1px solid',
-            borderColor: `${alpha(orange[500], 0.3)}`,
+            borderColor: `${alpha(deepOrange[500], 0.3)}`,
             fontWeight: '600',
             '&:hover': {
-              backgroundColor: orange[500],
+              backgroundColor: deepOrange[500],
             },
             '&:focus-visible': {
-              borderColor: orange[800],
-              backgroundColor: orange[200],
+              borderColor: deepOrange[800],
+              backgroundColor: deepOrange[200],
             },
             '& .MuiChip-label': {
-              color: orange[500],
+              color: deepOrange[500],
             },
             '& .MuiChip-icon': {
-              color: orange[500],
+              color: deepOrange[500],
             },
             ...(theme.palette.mode === 'dark' && {
-              background: `linear-gradient(to bottom right, ${orange[700]}, ${orange[900]})`,
-              borderColor: `${alpha(orange[500], 0.5)}`,
+              background: `linear-gradient(to bottom right, ${deepOrange[700]}, ${deepOrange[900]})`,
+              borderColor: `${alpha(deepOrange[500], 0.5)}`,
               '&:hover': {
-                backgroundColor: orange[600],
+                backgroundColor: deepOrange[600],
               },
               '&:focus-visible': {
-                borderColor: orange[200],
-                backgroundColor: orange[600],
+                borderColor: deepOrange[200],
+                backgroundColor: deepOrange[600],
               },
               '& .MuiChip-label': {
-                color: orange[200],
+                color: deepOrange[200],
               },
               '& .MuiChip-icon': {
-                color: orange[200],
+                color: deepOrange[200],
               },
             }),
           }),
@@ -435,7 +435,7 @@ export default function loadSLPTheme(mode) {
         },
         styleOverrides: {
           root: ({ theme }) => ({
-            color: orange[600],
+            color: deepOrange['A700'],
             fontWeight: 500,
             position: 'relative',
             textDecoration: 'none',
@@ -446,7 +446,7 @@ export default function loadSLPTheme(mode) {
               height: '1px',
               bottom: 0,
               left: 0,
-              backgroundColor: orange[200],
+              backgroundColor: deepOrange['A700'],
               opacity: 0.7,
               transition: 'width 0.3s ease, opacity 0.3s ease',
             },
@@ -455,7 +455,7 @@ export default function loadSLPTheme(mode) {
               opacity: 1,
             },
             ...(theme.palette.mode === 'dark' && {
-              color: orange[200],
+              color: deepOrange[500],
             }),
           }),
         },
@@ -493,7 +493,7 @@ export default function loadSLPTheme(mode) {
             transition: 'background-color 100ms ease-in',
             '&:hover': {
               '& .MuiSwitch-track': {
-                backgroundColor: orange[600],
+                backgroundColor: deepOrange[600],
               },
             },
             '& .MuiSwitch-switchBase': {
@@ -518,7 +518,7 @@ export default function loadSLPTheme(mode) {
               transition: 'background-color 100ms ease-in',
               '&:hover': {
                 '& .MuiSwitch-track': {
-                  backgroundColor: orange[600],
+                  backgroundColor: deepOrange[600],
                 },
               },
               '& .MuiSwitch-switchBase': {
@@ -573,12 +573,12 @@ export default function loadSLPTheme(mode) {
                 background: `${alpha('#FFF', 0.3)}`,
               },
               '&:hover': {
-                borderColor: orange[300],
+                borderColor: deepOrange[300],
               },
               '&.Mui-focused': {
-                borderColor: orange[400],
+                borderColor: deepOrange[400],
                 outline: '4px solid',
-                outlineColor: orange[200],
+                outlineColor: deepOrange[200],
               },
             },
             ...(theme.palette.mode === 'dark' && {
@@ -597,12 +597,12 @@ export default function loadSLPTheme(mode) {
                   background: `${alpha(gray[800], 0.4)}`,
                 },
                 '&:hover': {
-                  borderColor: orange[300],
+                  borderColor: deepOrange[300],
                 },
                 '&.Mui-focused': {
-                  borderColor: orange[400],
+                  borderColor: deepOrange[400],
                   outline: '4px solid',
-                  outlineColor: alpha(orange[500], 0.5),
+                  outlineColor: alpha(deepOrange[500], 0.5),
                 },
               },
             }),
