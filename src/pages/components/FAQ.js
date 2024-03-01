@@ -61,7 +61,7 @@ export default function FAQ() {
               sx={{ maxWidth: { sm: '100%', md: '70%' } }}
             >
               You can reach our customer support team by emailing
-              <Link> support@slpbox.com </Link>
+              <Link> support@bss.com </Link>
               or calling our toll-free number. We&apos;re here to assist you
               promptly.
             </Typography>
