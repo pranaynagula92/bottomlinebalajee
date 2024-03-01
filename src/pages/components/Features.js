@@ -42,7 +42,7 @@ const items = [
     icon: <DevicesRoundedIcon />,
     title: 'Training & Consulting',
     description:
-      'Finacial Life Programs',
+      'Financial Life Programs',
     imageLight: 'url("/static/images/templates/templates-images/devices-light.png")',
     imageDark: 'url("/static/images/templates/templates-images/devices-dark.png")',
   },

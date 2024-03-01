@@ -43,7 +43,7 @@ export default function Hero() {
               textAlign: 'center',
             }}
           >
-          Bottomtline Solutions & Services
+          Bottomline Solutions & Services
 
           </Typography>
           <Typography
