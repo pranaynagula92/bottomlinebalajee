@@ -1,0 +1,33 @@
+@keyframes scrollLeft {
+    0% {
+        margin-left: 0px;
+      transform: translateX(0%);
+    }
+    100% {
+        margin-left: -2125px;
+
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scrolling-wrapper {
+    display: flex;
+    overflow: hidden;
+    animation: scrollLeft 10s linear infinite;
+  }
+  
+  .logo-container {
+    flex: none;
+    animation: fadeInOut 3s infinite;
+  }
+  
+  .logo-img {
+    transition: opacity 0.5s ease;
+    
+  }
+  
+  /* Example of a dynamic greying out effect on hover */
+  .logo-img:hover {
+    opacity: 0.5;
+  }
+  
