@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  height: 600px;
+  height: 100vh;
   width: 100%;
 }
 #fh5co-header .overlay,
@@ -133,6 +133,9 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
   transform: rotate(-5deg);
+}
+.fh5co-cover .display-tc h3 {
+  font-family: "Kaushan Script", cursive;
 }
 #fh5co-header .display-tc h1 span,
 .fh5co-cover .display-tc h1 span {
